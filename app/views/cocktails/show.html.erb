@@ -1,9 +1,14 @@
 <h1>Cocktail#show</h1>
 <p>Find me in app/views/cocktail/show.html.erb</p>
-  <%= simple_form_for(@cocktail) do |f| %>
-    <%= f.input :name %>
-    <%= f.input :image_url %>
-    <%= f.submit %>
-  <% end %>
-<% end %>
 
+<div>
+<%= @cocktail.name %>
+</div>
+
+<div>
+  <%= link_to "Add Ingredients", new_cocktail_dose_path(@cocktail) %>
+</div>
+
+<div>
+<%= link_to "homepage", cocktails_path %>
+</div>

@@ -1,2 +1,11 @@
-<h1>Cocktails#index</h1>
-<p>Find me in app/views/cocktail/index.html.erb</p>
+<h1>Cocktails</h1>
+<p>Menu:</p>
+<div>
+<% @cocktails.each do |cocktail| %>
+  <%= link_to cocktail.name, cocktail_path(cocktail) %>
+  <!-- cocktail_path(heeft id nodig, zie routes, in dit geval cocktail) -->
+<% end %>
+</div>
+
+
+<%= link_to "make a cocktail", new_cocktail_path %>
