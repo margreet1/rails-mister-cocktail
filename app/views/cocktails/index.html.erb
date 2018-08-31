@@ -3,10 +3,9 @@
 <div>
 <% @cocktails.each do |cocktail| %>
   <div class="col-4 col-xs-12 col-sm-6 col-md-4">
-    <%= link_to cocktail.name, cocktail_path(cocktail) do %>
+  <%= link_to cocktail.name, cocktail_path(cocktail) %>
   <!-- cocktail_path(heeft id nodig, zie routes, in dit geval cocktail) <-->
   </-->
-  <% end %>
 <% end %>
 </div>
 

@@ -12,5 +12,3 @@ end
 #       resources :doses, only: [:new, :create, :destroy]
 #     end
 # end
-
-
