@@ -1,11 +1,10 @@
 <h1>Cocktails</h1>
 <p>Menu:</p>
 <div>
-<% @cocktails.each do |cocktail| %>
+<% @cocktails.each_with_index do |cocktail| puts "#{cocktail}" %>
   <div class="col-4 col-xs-12 col-sm-6 col-md-4">
   <%= link_to cocktail.name, cocktail_path(cocktail) %>
   <!-- cocktail_path(heeft id nodig, zie routes, in dit geval cocktail) <-->
-  </-->
 <% end %>
 </div>
 
